@@ -31,7 +31,7 @@
 
           <li>
             <a class="logo" href="index.html">
-              Web<span class=" logo__studio">Studio</span></a>
+              Web<span class="logo__studio">Studio</span></a>
           </li>
 
           <li>
@@ -352,91 +352,102 @@
       </div>
     </section>
 
-      <footer class="footer">
-    <section class="container footer__wrapper"> 
-      
-      <ul class="footer__address">
-      <li>
-      <a class="logo">Web<span class="logo__studio--white">Studio</span></a>
-      <address class="footer__address-city">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-      </address>
-      <div>     
-        <a class="footer__address-email" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a class="footer__address-link" href="tel:48111111111">+48 111 111 111</a>
-      </div>
+    <footer class="footer">
+      <section class="container footer__wrapper"> 
+        <ul>
+        <div class="footer__address">
+
+        <li>
+        <a class="logo">Web<span class="logo__studio--white">Studio</span></a>
+        <address class="footer__address-city">
+          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+        </address>
+        <div>     
+          <a class="footer__address-email" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+          <a class="footer__address-link" href="tel:48111111111">+48 111 111 111</a>
+        </div>
+      </li>
+
+        <li>
+          <div class="footer__join-main">
+            
+         <p class="footer__join-us footer__join-us--sc">Dołącz do nas</p>
+         
+          <ul class="social-media footer__social-media">
+            
+            <li>
+              <div class="social-media__icon social-media__icon--footer">
+                <svg class="social-media__svg social-media__svg-footer" width="20" height="20">
+                  <use href="./images/icon.svg#icon-instagram"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="social-media__icon social-media__icon--footer">
+                <svg class="social-media__svg social-media__svg-footer" width="20" height="20">
+                  <use href="./images/icon.svg#icon-twitter"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="social-media__icon social-media__icon--footer">
+                <svg class="social-media__svg social-media__svg-footer" width="20" height="20">
+                  <use href="./images/icon.svg#icon-facebook"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="social-media__icon social-media__icon--footer">
+                <svg class="social-media__svg social-media__svg-footer" width="20" height="20">
+                  <use href="./images/icon.svg#icon-linkedin"></use>
+                </svg>
+              </div>
+              </li>
+      </ul>
+    </div>
     </li>
 
-    <li class="footer__social-media">
-      <p class="footer__join-us">Dołącz do nas</p>
-      <div class="social-media">
-  <div class="social-media__icons">
-    <svg class="social-media__iconall" width="20" height="20">
-      <use href="./images/icon.svg#icon-instagram"></use>
-    </svg>
-  </div>
-  <div class="social-media__icons">
-    <svg class="social-media__iconall" width="20" height="20">
-      <use href="./images/icon.svg#icon-twitter"></use>
-    </svg>
-  </div>
-  <div class="social-media__icons">
-    <svg class="social-media__iconall" width="20" height="20">
-      <use href="./images/icon.svg#icon-facebook"></use>
-    </svg>
-  </div>
-  <div class="social-media__icons">
-    <svg class="social-media__iconall" width="20" height="20">
-      <use href="./images/icon.svg#icon-linkedin"></use>
-    </svg>
-  </div>
-  </div> 
-</li>     
-        
-<li>
-<div class="footer__newsletter">
-  <p class="footer__join-us">Zapisz się do newslettera</p>
-  <div class="footer__icon-position">
-    <form name="footer__newsletter" autocomplete="on" method="POST" validate>
-      <!-- action="javascript:void(0);" -->
-      <input
-        class="footer__newsletter-email"
-        type="email"
-        name="email"
-        placeholder="E-mail"
-        title="Podaj adres e-mail"
-        pattern="
-        ^(?P<local>[a-zA-Z0-9.!#$%&'*+/=?^_\x60{|}~-]+)@(?P<domain>[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$"
-        required
-      />
-      <button class="footer__button-submit" type="submit">
-        Zapisz się<svg class="footer__button-submit-svg" width="24" height="24">
-          <use href="./images/icon2.svg#icon-icon-send"></use>
-        </svg>
-      </button>
-    </form>
+      <li>
+        <div class="footer__newsletter">
+          <p class="footer__join-us">Zapisz się do newslettera</p>
+          <div class="footer__icon-position">
+            <form name="footer__newsletter" autocomplete="on" method="POST" validate>
+              <!-- action="javascript:void(0);" -->
+              <input
+                class="footer__newsletter-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                title="Podaj adres e-mail"
+                pattern="
+                ^(?P<local>[a-zA-Z0-9.!#$%&'*+/=?^_\x60{|}~-]+)@(?P<domain>[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$"
+                required
+              />
+              <button class="footer__button-submit" type="submit">
+                Zapisz się<svg class="footer__button-submit-svg" width="24" height="24">
+                  <use href="./images/icon2.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
   </div>
 </li>
-
 </div>
 </div>
-
 </ul>
+
 </section>
 </footer>
     </body>
 
- 
-  
 <!--Modal Window -->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
+  
   <button type="button" class="modal__close" data-modal-close>
     <svg width="20" height="20">
       <use href="./images/icon2.svg#icon-close-black"></use>
     </svg>
   </button>
-
 
   <div class="modal container">
     <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
