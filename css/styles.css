@@ -34,13 +34,13 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-.header {
+.page-header {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid rgb(236, 236, 236);    
 }
 .logo {
-    font-family:var(--logo-font)
+    font-family:var(--logo-font);
     font-weight: 700;
     font-size: 26px;
     color: var(--color-blue);
@@ -49,31 +49,26 @@ body {
 }
 .logo__studio {
   color: var(--color-black);
-  
 }
 .logo__studio--white {
   color: var(--color-white);
 }
-.header__nav-link,.logo__agencja, 
-.header__nav-item {
-    text-decoration: none;
-    color: #000;
-}
-.header__nav {
-    display: flex;
+.nav {
+    display: inline-flex;
     justify-content: space-between;
-}
-.header__nav-list {
+    list-style: none;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: flex;
-    list-style: none;
-    gap: 46px; 
-    align-items: center;
+    gap: 46px;
 }
-.header__nav-active-link::after {
+.nav__link {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+.nav__link--active::after {
     content: "";
     background-color: var(--color-blue);
     width: 53px;
@@ -84,29 +79,23 @@ body {
     display: block;
     top: 76px;
 }
-.header__nav-link {
-  color: var(--color-blue);
-}
-.header__contacts {
-    display: flex;
+.contact {
+    display: inline-flex;
     list-style: none;
 }
-.header__contacts-link {
-    display: flex;
+.contact__link {
     align-items: center;
     color: var(--color-gray2);
     text-decoration: none;
     gap: 10px;
-    margin-left: 10px;
     list-style: none;
-    display: flex;
     align-items: center; 
     fill: var(--color-gray2);
     margin-left: 30px;
 } 
-.header__nav-link:hover, .header__nav-link:focus,
-.header__contacts-link:hover, .header__contacts-link:focus,
-.header__contacts-icon:hover, .header__contacts-icon:focus
+.nav__link:hover, .nav__link:focus,
+.contact__link:hover, .contact__link:focus,
+.contact__icon:hover, .contact__icon:focus
  {
     color:var(--color-blue); 
     fill: var(--color-blue);
