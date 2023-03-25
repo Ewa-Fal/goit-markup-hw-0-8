@@ -1,0 +1,35 @@
+@import './utils/vars';
+@import './components/page-header';
+@import './components/main-section';
+@import './components/form';
+@import './components/icon';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+@import './components/address';
+@import './components/join';
+@import './components/newsletter';
+@import './components/stamp';
+@import './components/projekt';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+body {
+    font-family: var(--basic-font);
+    color: var(--color-black2);
+    background-color: var(--color-white);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 14px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
