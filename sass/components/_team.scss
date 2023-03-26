@@ -25,12 +25,40 @@
     border-radius: 0px 0px 4px 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    @include mobile {
+        max-width:450px;
+        }
 
+        @include tablet {
+        max-width: 354px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+        @include desktop {
+        max-width: 270px;
+        }
+        
 &__setup {
         list-style: none;
         display: flex;
         justify-content: center;
         gap: 30px;
+      }
+&__image {
+    @media screen and (max-width:480px) {
+        max-width:95vw;
+        }
+            
       }
 &__name {
         margin-top: 30px;

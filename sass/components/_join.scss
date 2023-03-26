@@ -9,6 +9,11 @@
       text-transform: uppercase;
       padding-top: 10px;
       padding-bottom: 20px;
+
+     
+        @include desktop {
+            margin-top: 12px;
+        }
     }
   &__icon {
       display: flex;

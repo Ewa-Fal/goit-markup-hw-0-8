@@ -26,7 +26,18 @@
         font-style: normal;
         list-style: none;
         justify-content: center;
+
+        @include desktop {
+          gap: 70px;
+          text-align: left;
+          flex-wrap: nowrap;
       }
+      }
+      &__item {
+
+        @include desktop {
+            flex-wrap: nowrap;
+        }
 &__city {
           font-style: normal;
           color: var(--color-white);
