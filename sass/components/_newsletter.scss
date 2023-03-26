@@ -36,7 +36,6 @@
           border-radius: 4px;
         }  
   }
-    
   &__button-news {
       position: relative;
       padding-top: 10px;
@@ -55,11 +54,12 @@
       text-align: left;
       fill: var(--color-white);
       cursor: pointer;
-      &--send {
+  }
+  &__send {
           position: absolute;
           top: 13px;
           right: 24px;
         }  
   }
     
-  }
+  
