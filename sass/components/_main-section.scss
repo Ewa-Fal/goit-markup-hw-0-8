@@ -1,11 +1,12 @@
 .main-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), url("../images/Img-efect.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), 
+    url("../images/Img-efect.jpg");
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 50%), 
     url("../images/Img-efect.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1600px;
+   width: 100vw;
     height: 600px;
     margin: 0 auto;
     color: var(--color-white);
@@ -59,7 +60,7 @@
 
     @include tablet {
 
-        max-width: 1200px;
+       
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -67,7 +68,7 @@
 
     @include desktop {
         max-height: 600px;
-        max-width: 1600px;
+       
         align-items: center;
         margin-left: auto;
         margin-right: auto;
