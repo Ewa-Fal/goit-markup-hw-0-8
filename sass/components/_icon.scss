@@ -1,5 +1,4 @@
 .icon {
-    font-size: 14px;
     list-style: none;
     padding-top: 94px;
     display: flex;
@@ -7,24 +6,19 @@
     justify-content: space-between;
     
     @include tablet {
-        display: flex;
         flex-wrap: wrap;
         padding-bottom: 45px;
     }
-
     @include desktop {
-        display: flex;
         padding-top: 92px;
         padding-bottom: 0px;
     }
-
 &__name {
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: 0.03em;
          margin-bottom: 10px;
          padding-top: 30px;
-
 
          @include tablet {
             text-align: left;
@@ -35,7 +29,6 @@
         }
      }
 &__text {
-         font-weight: 400;
          line-height: 1.71;
          letter-spacing: 0.03em;
          color: var(--color-gray2);
@@ -43,11 +36,9 @@
          @include tablet {
             width: 354px;
         }
-
         @include desktop {
             width: 270px;
         }
-        
      }
 &__size {
          width: 270px;

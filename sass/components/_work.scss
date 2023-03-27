@@ -1,3 +1,10 @@
+.section-none {
+  display: none;
+
+ @include desktop {
+display: block;
+ }
+}
 
 .section__caption {
   text-align: center;

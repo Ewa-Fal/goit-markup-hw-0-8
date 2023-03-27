@@ -31,13 +31,12 @@ body {
     font-size: 14px;
 }
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 15px;
 
     @include tablet {
-        max-width: 768px;
+        max-width: 900px;
+        min-width: 768px;
     }
 
     @include desktop {
@@ -48,11 +47,6 @@ body {
 .section__caption {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @include tablet {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
     @include desktop {
         padding-top: 94px;
