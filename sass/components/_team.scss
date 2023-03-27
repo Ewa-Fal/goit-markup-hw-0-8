@@ -1,3 +1,7 @@
+.teambreak {
+    width: 100vw;
+    padding-top: 94px;
+
 .section {
 &__caption {
         text-align: center;
@@ -5,15 +9,11 @@
         font-size: 36px;
         line-height: 1.16;
         margin-bottom: 50px;
-        padding-top: 94px;
 }
 &--grey {
     background: var(--color-gray);
 }
 }
-
-
-
   .team {
     margin-bottom: 94px;
     font-size: 16px;
@@ -93,3 +93,4 @@
           transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
         }
     }
+}

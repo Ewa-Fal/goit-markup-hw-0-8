@@ -86,7 +86,7 @@
   </div>
 </section>
 
-<section>
+
 <!-- form
   Modal Form -->
 <div class="form is-hidden" data-modal>
@@ -97,10 +97,9 @@
         <use href="./images/icon2.svg#icon-close-black"></use>
       </svg>
     </button>
-  
-    <div class="container">
+
       <p class="form__header">Zostaw swoje dane w formularzu poniżej</p>
-      <form name="zamow_usluge" autocomplete="on" method="POST" validate>
+      <form class="form__list" name="zamow_usluge" autocomplete="on" method="POST" validate>
         <!-- action="javascript:void(0);" -->
         <label class="form__label"
           >Imię
@@ -158,20 +157,18 @@
           ></textarea>
         </label>
         <label class="form__checkbox">
-          <input class="form__checkbox--style" type="checkbox" name="agreement" />Oświadczam iż
-          akceptuję
-          <a class="form__links" href="#" target="_blank">Regulamin</a
-          >&nbsp;&nbsp;<a class="form__links" href="#" target="_blank"
+          Oświadczam iż akceptuję
+          
+          <a class="form__links" href="#" target="_blank">Regulamin</a>
+          <a class="form__links" href="#" target="_blank"
             >Politykę Prywatności.</a>
+            <input class="form__checkbox--style" type="checkbox" name="agreement" />
         </label>
         <button class="form__submit" type="submit">Wyślij</button>
       </form>
-    </div>
+    
   </div>
   </div>
-  <!-- Java Script scripts -->
-  <script src="js/modal.js"></script>
-  </section>
   
 <!-- icon                       LOREM IPSUM - -->
   <div class="icon">
@@ -221,7 +218,7 @@
 </li>
     </ul>
     </section>
-    
+
     </div>
 
 <!--Work -->
@@ -255,6 +252,7 @@
     </section>
 
 <!--Team -->
+<div class="teambreak">
 <section class="section section--grey">
 
       <h2 class="section__caption">Nasz zespół</h2>
@@ -406,9 +404,9 @@
           </ul>
        
         </li>
-      </div>
+      
     </section>
-    
+  </div>  
 <!--Clients -->
 <section class="section">
   <div class="container">
@@ -523,7 +521,8 @@
         </ul>
         </section>
         </footer>
-
+ <!-- Java Script scripts -->
+ <script src="js/modal.js"></script>
 
 </body>
 
