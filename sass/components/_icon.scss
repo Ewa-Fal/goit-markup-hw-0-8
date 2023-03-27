@@ -2,11 +2,9 @@
 padding-top: 94px;
 width: 100vw;
 
-
 &__list {
     list-style: none;
     display: flex;
-    gap: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
     
@@ -16,9 +14,9 @@ width: 100vw;
     @include desktop {
         padding-top: 92px;
         padding-bottom: 0px;
+        flex-wrap: nowrap;
     }
 }
-
 &__name {
         font-weight: 700;
         line-height: 1.14;
@@ -47,23 +45,28 @@ width: 100vw;
         }
      }
 &__size {
-         min-width: 100vw;
-         background: #F5F4FA;
+         max-width: 95vw;
          border-radius: 4px;
 
          @include tablet {
-            min-width: 354px;
+            max-width: 354px;
         }
-
         @include desktop {
-            min-width: 270px;
+        max-width: 270px;
         }
       }
-      
-      &__item {
+&__item {
+        background: #F5F4FA;
         padding: 25px 0;
         min-width: 95vw;
         max-height: 120px;
 
+        @include tablet {
+            min-width: 354px;
+        }
+        @include desktop {
+            min-width: auto;
+            width: 270px;
+        }  
       }
 }

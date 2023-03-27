@@ -18,6 +18,13 @@
     }
     }
     }
+    .nav__list, .nav__link, 
+    .nav__link--active, .contact__link,
+    .contact, .contact__icon {
+      @include tablet-down {
+        display: none;
+      } 
+    }
     .nav {
       display: flex;
       justify-content: space-between;
@@ -31,7 +38,6 @@
             list-style: none;
             gap: 46px;
           }
-          
         &__link {
             color: var(--color-blue);
             text-decoration: none;

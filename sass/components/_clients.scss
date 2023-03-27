@@ -40,20 +40,16 @@
       height: 92px;
       fill: var(--color-fill);
 
-
       @include mobile {
         width: 210px;
-        padding: 16px 52px;
     }
 
     @include tablet {
         width: 226px;
-        padding: 16px 60px;
     }
 
     @include desktop {
         width: 170px;
-        padding: 16px 32px;
     }
     
       &:hover, &:focus {

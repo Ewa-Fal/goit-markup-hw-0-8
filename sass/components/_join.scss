@@ -1,5 +1,11 @@
 .join {
-    margin-left: 40px;
+    padding: 46px 0;
+
+    @include desktop {
+    text-align: start;
+    padding: 10px 0 46px 0;
+    }
+
     &__title {
       color: var(--color-white);
       font-weight: 700;
@@ -9,18 +15,25 @@
       text-transform: uppercase;
       padding-top: 10px;
       padding-bottom: 20px;
-
      
         @include desktop {
-            margin-top: 12px;
+          text-align: start;
+          margin-left: 40px;
+          margin-top: 12px;
         }
     }
   &__icon {
       display: flex;
       gap: 10px;
-      margin-right: 70px;
       list-style: none;
-    }
+      justify-content: space-between;
+      
+
+      @include desktop {
+        margin-right: 70px;
+      }
+  }
+      
   &__social-media {
       display: flex; 
       justify-content: center;
