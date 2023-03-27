@@ -1,5 +1,5 @@
-@import "./utils/mixins";
-@import "./utils/globals";
+@import './utils/mixins';
+
 
 @import './utils/vars';
 @import './components/page-header';
@@ -43,5 +43,20 @@ body {
 
     @include desktop {
         max-width: 1200px;
+    }
+}
+
+.section__caption {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
