@@ -1,18 +1,24 @@
 .icon {
+padding-top: 94px;
+width: 100vw;
+
+&__list {
     list-style: none;
-    padding-top: 94px;
+    
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    flex-wrap: wrap;
     
     @include tablet {
-        flex-wrap: wrap;
         padding-bottom: 45px;
     }
     @include desktop {
         padding-top: 92px;
         padding-bottom: 0px;
     }
+}
+
 &__name {
         font-weight: 700;
         line-height: 1.14;
@@ -41,18 +47,18 @@
         }
      }
 &__size {
-         width: 270px;
-         height: 120px;
+         min-width: 100vw;
+         max-height: 120px;
          background: #F5F4FA;
          border-radius: 4px;
          padding: 25px 100px;
-
+         
          @include tablet {
-            width: 354px;
+            min-width: 354px;
         }
 
         @include desktop {
-            width: 270px;
+            min-width: 270px;
         }
 
       }   
