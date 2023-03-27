@@ -22,14 +22,14 @@
         background-image: linear-gradient(to bottom,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../images/team-mob-x2.jpg");
+            url("./images/images-1/computer-keyboard1.jpg x2");
     }
 
     @media (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../images/team-tab-x1.jpg");
+            url("./images/images-1/computer-keyboard1.jpg x1");
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -37,7 +37,7 @@
             background-image: linear-gradient(to bottom,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../images/team-tab-x2.jpg");
+                url("./images/images-1/computer-keyboard1.jpg x2");
         }
     }
 
