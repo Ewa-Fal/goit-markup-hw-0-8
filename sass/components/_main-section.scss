@@ -1,10 +1,7 @@
-.main-section {     
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4) 0%,
-        rgba(47, 48, 58, 0.4) 50%
-      ),
-      url("../images/Img-efect.jpg");
+.main-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), color-stop(50%, rgba(47, 48, 58, 0.4))), url("../images/Img-efect.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 50%), 
+    url("../images/Img-efect.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +12,8 @@
     letter-spacing: 0.06em;
     text-align: center;
     padding: 200px 0;
+  
+
 
     @media (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -22,14 +21,14 @@
         background-image: linear-gradient(to bottom,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("./images/images-1/computer-keyboard1.jpg x2");
+            url("../images/Img-efect@2x.jpg");
     }
 
     @media (min-width: 768px) {
         background-image: linear-gradient(to bottom,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("./images/images-1/computer-keyboard1.jpg x1");
+            url("../images/Img-efect1x.jpg");
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -37,7 +36,7 @@
             background-image: linear-gradient(to bottom,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("./images/images-1/computer-keyboard1.jpg x2");
+                url("../images/Img-efect@2x.jpg");
         }
     }
 
@@ -46,7 +45,7 @@
         background-image: linear-gradient(to bottom,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("../images/team-desk-x1.jpg");
+            url("../images/Img-efect1x.jpg");
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -54,7 +53,7 @@
             background-image: linear-gradient(to bottom,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("../images/team-desk-x2.jpg");
+                url("../images/Img-efect@2x.jpg");
         }
     }
 
