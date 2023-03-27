@@ -1,3 +1,7 @@
+.section-clients {
+    max-width: 100vw;
+
+}
 .section__caption {
   text-align: center;
   font-weight: 700;
@@ -27,12 +31,15 @@
     list-style: none;
     justify-content: space-between;
     padding-bottom: 94px;
+    flex-wrap: wrap;
+    
 &__icon {
       border: var(--color-fill) 1px solid;
       border-radius: 4px;
       width: 170px;
       height: 92px;
       fill: var(--color-fill);
+
 
       @include mobile {
         width: 210px;

@@ -54,10 +54,13 @@
         display: flex;
         justify-content: center;
         gap: 30px;
+        flex-wrap: wrap;
       }
 &__image {
-    @media screen and (max-width:480px) {
-        max-width:95vw;
+
+   @include tablet-down {
+        max-width: 95vw;
+        width: 450px;
         }
             
       }

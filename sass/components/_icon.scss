@@ -2,9 +2,9 @@
 padding-top: 94px;
 width: 100vw;
 
+
 &__list {
     list-style: none;
-    
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -48,11 +48,9 @@ width: 100vw;
      }
 &__size {
          min-width: 100vw;
-         max-height: 120px;
          background: #F5F4FA;
          border-radius: 4px;
-         padding: 25px 100px;
-         
+
          @include tablet {
             min-width: 354px;
         }
@@ -60,6 +58,12 @@ width: 100vw;
         @include desktop {
             min-width: 270px;
         }
+      }
+      
+      &__item {
+        padding: 25px 0;
+        min-width: 95vw;
+        max-height: 120px;
 
-      }   
+      }
 }

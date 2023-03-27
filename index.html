@@ -178,45 +178,44 @@
 <!-- icon                       LOREM IPSUM - -->
   <div class="icon">
     <section class="container">
+
       <ul class="icon__list">
-      <li>
-        <div class="icon__size">
-          <svg width="70" height="70">
+
+        <li class="icon__size">
+          <svg class="icon__item">
             <use href="./images/icon.svg#icon-antenna"></use>
           </svg>
-        </div>  
-      <h3 class="icon__name">LOREM IPSUM</h3>
+       
+  <h3 class="icon__name">LOREM IPSUM</h3>
       <p class="icon__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
     </li>
-      <li>
-        <div class="icon__size">
-          <svg width="70" height="70">
+      <li class="icon__size">
+        <svg class="icon__item">
             <use href="./images/icon.svg#icon-clock"></use>
           </svg>
-        </div>  
-      <h3 class="icon__name">LOREM IPSUM</h3>
+         
+  <h3 class="icon__name">LOREM IPSUM</h3>
       <p class="icon__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
     </li>
 
-    <li>
-      <div class="icon__size">
-        <svg width="70" height="70">
+    <li class="icon__size">
+      <svg class="icon__item">
           <use href="./images/icon.svg#icon-diagram"></use>
         </svg>
-      </div>  
-    <h3 class="icon__name">LOREM IPSUM</h3>
+        
+  <h3 class="icon__name">LOREM IPSUM</h3>
     <p class="icon__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
   </li>
 
-  <li>
-    <div class="icon__size">
-      <svg width="70" height="70">
+  <li class="icon__size">
+    <svg class="icon__item">
         <use href="./images/icon.svg#icon-astronaut"></use>
       </svg>
     </div>  
+
   <h3 class="icon__name">LOREM IPSUM</h3>
   <p class="icon__text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
@@ -267,7 +266,7 @@
         <li class="team">
 
           <img class="team__image" src="./images/images-team2/christopher-walker1.jpg"
-          srcset="./images/images-team2/christopher-walker1@2x.jpg"  alt="Christopher Walker" width="270" height="260"
+          srcset="./images/images-team2/christopher-walker1@2x.jpg"  alt="Christopher Walker"
           sizes="(min-width:480px) 900px, 450px, (min-width:768px) 354px, 708px,  (min-width:1200px)270px, 540px"/>
           
           <h4 class="team__name">Christopher Walker</h4>
@@ -304,7 +303,7 @@
 
           <img class="team__image" src="./images/images-team2/kylie-evans2.jpg" 
 
-          srcset="./images/images-team2/kylie-evans2@2x.jpg"  alt="kylie evans" width="270" height="260"
+          srcset="./images/images-team2/kylie-evans2@2x.jpg"  alt="kylie evans"
 
           sizes="(min-width:480px) 900px, 450px, (min-width:768px) 354px, 708px,  (min-width:1200px)270px, 540px"/>
 
@@ -340,7 +339,7 @@
         <li class="team">
           <img class="team__image" src="./images/images-team2/ryan-harris3.jpg"
 
-          srcset="./images/images-team2/ryan-harris3@2x.jpg"  alt="ryan harris" width="270" height="260"
+          srcset="./images/images-team2/ryan-harris3@2x.jpg"  alt="ryan harris"
 
           sizes="(min-width:480px) 900px, 450px, (min-width:768px) 354px, 708px,  (min-width:1200px)270px, 540px"/>
 
@@ -376,7 +375,7 @@
         <li class="team">
           <img class="team__image" src="./images/images-team2/tyler-moore4.jpg"
 
-          srcset="./images/images-team2/tyler-moore4@2x.jpg"  alt="tyler moore" width="270" height="260"
+          srcset="./images/images-team2/tyler-moore4@2x.jpg"  alt="tyler moore"
 
           sizes="(min-width:480px) 900px, 450px, (min-width:768px) 354px, 708px,  (min-width:1200px)270px, 540px"/>
 
@@ -413,7 +412,7 @@
     </section>
   </div>  
 <!--Clients -->
-<section class="section">
+<section class="section section-clients">
   <div class="container">
 
     <h2 class="section__caption">Nasi klienci</h2>
@@ -468,15 +467,18 @@
 
     <footer class="address">
       <section class="section"> 
+
         <ul class="address__setup">
+
         <li class="address__item">
         <a class="logo">Web<span class="logo__studio--white">Studio</span></a>
         <address class="address__city">
           <p>m. Warszawa, Aleje Jerozolimskie 21</p>
         </address>
-          <a class="address__kontact" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-          <a class="address__kontact" href="tel:48111111111">+48 111 111 111</a>
+          <a class="address__contact" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+          <a class="address__contact" href="tel:48111111111">+48 111 111 111</a>
       </li>
+
         <li class="join">
           <p class="join__title">Dołącz do nas</p>
           <ul class="join__icon">
@@ -504,7 +506,7 @@
     </li>
       <li class="newsletter">
           <p class="newsletter__title">Zapisz się do newslettera</p>
-            <form name="newsletter" autocomplete="on" method="POST" validate>
+            <form class="newsletter__list" name="newsletter" autocomplete="on" method="POST" validate>
               <!-- action="javascript:void(0);" -->
               <input
                 class="newsletter__email"
