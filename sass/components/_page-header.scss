@@ -1,22 +1,26 @@
 .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgb(236, 236, 236);    
+    border-bottom: 1px solid rgb(236, 236, 236);
+    max-height: 80px;
+  
     .logo {
-        font-family:var(--logo-font);
+        font-family: var(--logo-font);
         font-weight: 700;
         font-size: 26px;
         color: var(--color-blue);
-        margin-right: 47px;
         text-decoration: none;
-    
+        
+    @include desktop {
+          margin-right: 47px;
+        }
     &__studio {
       color: var(--color-black);
-    
+    }
     &--white {
       color: var(--color-white);
     }
-    }
+    
     }
     .nav__list, .nav__link, 
     .nav__link--active, .contact__link,
@@ -32,15 +36,19 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        &__list {
-            display: flex;
+
+      &__list {
+            display: inline-flex;
             align-items: center;
             list-style: none;
+            justify-content: space-between;
             gap: 46px;
-          }
-        &__link {
-            color: var(--color-blue);
+        }
+      &__link {
             text-decoration: none;
+            color: var(--color-black2);
+            list-style: none;
+
             &--active::after {
                 content: "";
                 background-color: var(--color-blue);
@@ -52,32 +60,198 @@
                 display: block;
                 top: 76px;
             }
-        &__link:hover, &__link:focus {
-                color:var(--color-blue); 
-                fill: var(--color-blue);
+
+        &:hover, &:focus {
+                color: var(--color-blue);
                 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
             }
           }
-    }
+        }
+       .inline {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background: none;
+          border: none;
+
+          @include tablet {
+            display: none;
+          }
+
+          &__button {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 24px;
+            height: 2.67px;
+            background-color: black;
+            top: 50%;
+            left: 18%;
+
+            &::before {
+              position: absolute;
+            display: block;
+            content: "";
+            width: 24px;
+            height: 2.67px;
+            background-color: black;
+            top: -6px;
+            }
+
+            &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 24px;
+            height: 2.67px;
+            background-color: black;
+            top: 6px;
+            }
+          }
+        }
+        
+     
     .contact {
         display: flex;
         list-style: none;
         align-items: center;
+
+        @include tablet-only {
+        flex-direction: column;
+        align-items: start;
+        }
     &__link {
             text-decoration: none;
             color: var(--color-gray2);
-            fill: var(--color-gray2);
+
+    &:hover, &:focus
+         {
+            color: var(--color-blue); 
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        }
         }
     &__icon {
           margin-right: 10px;
           margin-left: 30px;
+          fill: currentColor;
         }
-    
-        &:hover, &:focus
-         {
-            color:var(--color-blue); 
-            fill: var(--color-blue);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-        }
-    }
+      }
+
 }
+
+  .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      transform: translateX(500%);
+      visibility:hidden;
+      display: flex;
+      flex-direction: column;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms; 
+    &__close {
+        position: fixed;
+        top: 8px;
+        right: 28px;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover, &:focus {
+          background-color: var(--color-blue);
+        }
+    &::before {
+          content: "";
+          width: 15px;
+          height: 2px;
+          background-color: black;
+          fill: black;
+          position: absolute;
+          left: 25%;
+          transform: rotate(45deg);
+        }
+    &::after {
+          content: "";
+          width: 15px;
+          height: 2px;
+          background-color: black;
+          fill: black;
+          position: absolute;
+          left: 25%;
+          transform: rotate(-45deg);
+        }
+      }
+    &__list {
+          display: inline-flex;
+          flex-direction: column;
+          margin: 48px 0 0 40px;
+          gap: 32px;
+          list-style: none;
+    }
+    &__link {
+            font-size: 40px;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--color-black);
+          
+   
+        }
+      }
+      .contacts {
+        @extend .menu__list; 
+        padding-top: 302px; 
+        
+      &__tel {
+            text-decoration: none;
+            color: var(--color-blue);
+            font-size: 34px;
+      }
+      &__mail {
+            text-decoration: none;
+            color: var(--color-gray2);
+            font-size: 24px;
+      } 
+      }
+      .social {
+        display: inline-flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        margin-right: 83px;
+        width: 85vw;
+        list-style: none;
+        
+        
+        @include mobile {
+          margin-left: 40px;
+        }
+
+        &__item {
+          padding-right: 7%;
+          font-size: 18px;
+
+          &:last-child {
+            border: none;
+            padding-right: 0;
+          }
+
+          @include mobile {
+            border-right: solid 1px var(--color-gray2);
+
+          }
+
+        }
+        &__link {
+          color: var(--color-blue);
+          text-decoration: none;
+        }
+      }
+      
+     .is-open {
+      visibility: visible;
+      transform: translateX(0);
+     }
+    

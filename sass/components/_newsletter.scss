@@ -5,13 +5,25 @@
     align-items: center;
     padding-top: 25px;
 
+    @include tablet-only {
+      width: 60vw;
+      padding: 25px 50px;
+  }
+  @include desktop {
+    align-items: start;
+  }
+ 
     &__list {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-    } 
 
+    @include desktop {
+      flex-direction: row;
+      
+    }
+    } 
     &__title {
       color: var(--color-white);
       font-weight: 700;
@@ -23,7 +35,6 @@
       padding-bottom: 20px;
     }
   &__email {
-      margin-right: 12px;
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 16px;
@@ -52,9 +63,10 @@
           text-align: center;
     }
         @include tablet {
-          width: 60vw;
+          width: 50vw;
       } 
       @include desktop{
+        margin-right: 12px;
         width: 358px;
     }    
   }
@@ -77,6 +89,10 @@
       text-align: left;
       fill: var(--color-white);
       cursor: pointer;
+
+      @include desktop {
+        margin: 0;
+      }
   }
   &__send {
           position: absolute;

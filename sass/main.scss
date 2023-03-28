@@ -31,11 +31,17 @@ body {
     font-size: 14px;
 }
 .container {
+    max-width: 450px;
     margin: auto;
-    padding: 0 15px;
+    padding: 0;
+
+    @include mobile {
+max-width: 600px;
+min-width: 450px;
+    }
 
     @include tablet {
-        max-width: 900px;
+        max-width: 830px;
         min-width: 768px;
     }
 
@@ -44,29 +50,26 @@ body {
     }
 }
 
-.section__caption {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
+.section__title {
+    padding-bottom: 30px;
     }
-}
 
 .container_footer {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     @include tablet {
-        text-align: center;
         padding: 10px 50px;
+        flex-wrap: wrap;
   }
-
   @include desktop {
     text-align: left;
     padding: 50px;
     vertical-align: baseline;
 }
+}
 
+a:hover, a:focus, button:hover, button:focus {
+    color: var(--color-blue);
 }

@@ -3,12 +3,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 100vw;
-    
 
     @include tablet-down {
       text-align: center;
 }
-
     .logo {
         font-family:var(--logo-font);
         font-weight: 700;
@@ -36,14 +34,19 @@
     @include tablet-down {
       flex-direction: column;
 }
+@include tablet {
+  flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: baseline;
+}
         @include desktop {
-          gap: 70px;
+          gap: 30px;
           text-align: left;
           flex-wrap: nowrap;
+          justify-content: space-between;
       }
       }
       &__item {
-
         @include desktop {
             flex-wrap: nowrap;
         }

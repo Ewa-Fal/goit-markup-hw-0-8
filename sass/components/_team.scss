@@ -1,23 +1,19 @@
-.teambreak {
-    width: 100vw;
-    padding-top: 94px;
 
 .section {
-&__caption {
+&__title {
         text-align: center;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
-        margin-bottom: 50px;
 }
 &--grey {
     background: var(--color-gray);
-    
+    padding-top: 94px;
 }
 }
   .team {
     max-width: 95vw;
-    margin-bottom: 94px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -41,8 +37,11 @@
         list-style: none;
         display: flex;
         justify-content: center;
-        gap: 30px;
         flex-wrap: wrap;
+
+        @include tablet {
+        gap: 30px;
+        }
       }
 &__image {
     max-width: 95vw;
@@ -90,4 +89,3 @@
           transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
         }
     }
-}

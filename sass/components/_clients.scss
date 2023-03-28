@@ -1,62 +1,40 @@
 .section-clients {
-    max-width: 100vw;
-
+    padding: 94px 0;
+    display: flex;
+    align-items: center;
 }
-.section__caption {
+.section__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-bottom: 50px;
-  padding-top: 94px;
-
-
-  @include mobile {
-    flex-wrap: wrap;
-
-}
-
-@include tablet {
-    flex-wrap: wrap;
-
-}
-
-@include desktop {
-    flex-wrap: nowrap;
-    align-items: center;
-}
 }
 .clients {
     display: flex;
     list-style: none;
-    justify-content: space-between;
-    padding-bottom: 94px;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    gap: 20px;
+
+ @include tablet {
+    justify-content: space-between;
+}
 &__icon {
       border: var(--color-fill) 1px solid;
       border-radius: 4px;
-      width: 170px;
+      width: 210px;
       height: 92px;
       fill: var(--color-fill);
-
-      @include mobile {
-        width: 210px;
-    }
 
     @include tablet {
         width: 226px;
     }
-
     @include desktop {
         width: 170px;
     }
-    
       &:hover, &:focus {
           border: var(--color-blue) 1px solid;
           border-radius: 4px;
-          width: 170px;
-          height: 92px;
           fill: var(--color-blue);
         }
       }
