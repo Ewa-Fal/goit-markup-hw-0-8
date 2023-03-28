@@ -16,9 +16,7 @@
     justify-content: center;
     gap: 20px;
 
- @include tablet {
-    justify-content: space-between;
-}
+ 
 &__icon {
       border: var(--color-fill) 1px solid;
       border-radius: 4px;

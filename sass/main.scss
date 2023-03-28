@@ -31,14 +31,8 @@ body {
     font-size: 14px;
 }
 .container {
-    max-width: 450px;
     margin: auto;
-    padding: 0;
-
-    @include mobile {
-max-width: 600px;
-min-width: 450px;
-    }
+    padding: 0 15px;
 
     @include tablet {
         max-width: 830px;
